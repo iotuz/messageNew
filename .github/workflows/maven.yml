@@ -11,10 +11,10 @@ name: Java CI with Maven
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:   # Manual trigger from GitHub Actions UI
   pull_request:
     branches: [ "main" ]
-  workflow_dispatch:   # Manual trigger from GitHub Actions UI
-
+  
 
 jobs:
   build:
